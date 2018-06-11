@@ -1,6 +1,9 @@
 GUI Applications
 ================
 
+.. image:: https://farm5.staticflickr.com/4250/33907143624_cd621b535c_k_d.jpg
+
+
 Alphabetical list of GUI Applications.
 
 Camelot
@@ -28,7 +31,7 @@ applications be ported from PyGTK to PyGObject.
 PyGObject aka (PyGi)
 --------------------
 `PyGObject <https://wiki.gnome.org/Projects/PyGObject>`_ provides Python bindings, which gives access to the entire GNOME software platform.
-It is fully compatible with GTK+ 3. Here is a tutorial to get started with `Python GTK+ 3 Tutorial <http://python-gtk-3-tutorial.readthedocs.org/en/latest/>`_.
+It is fully compatible with GTK+ 3. Here is a tutorial to get started with `Python GTK+ 3 Tutorial <https://python-gtk-3-tutorial.readthedocs.io/en/latest/>`_.
 
 `API Reference <http://lazka.github.io/pgi-docs/>`_
 
@@ -84,6 +87,16 @@ Qt
 `Qt <http://qt-project.org/>`_ is a cross-platform application framework that
 is widely used for developing software with a GUI but can also be used for
 non-GUI applications.
+
+Toga
+----
+`Toga <https://toga.readthedocs.io/en/latest/>`_ is a Python native, OS
+native, cross platform GUI toolkit. Toga consists of a library of base
+components with a shared interface to simplify platform-agnostic GUI
+development.
+
+Toga is available on Mac OS, Windows, Linux (GTK), and mobile platforms such
+as Android and iOS.
 
 Tk
 --

@@ -3,17 +3,19 @@
 Code Style
 ==========
 
-If you ask Python programmers what they like most in Python, they will
-often say its high readability.  Indeed, a high level of readability
+.. image:: https://farm5.staticflickr.com/4223/33907150054_5ee79e8940_k_d.jpg
+
+If you ask Python programmers what they like most about Python, they will
+often cite its high readability.  Indeed, a high level of readability
 is at the heart of the design of the Python language, following the
 recognized fact that code is read much more often than it is written.
 
-One reason for Python code to be easily read and understood is its relatively
+One reason for the high readability of Python code is its relatively
 complete set of Code Style guidelines and "Pythonic" idioms.
 
-Moreover, when a veteran Python developer (a Pythonista) points to portions of
-code and says they are not "Pythonic", it usually means that these lines
-of code do not follow the common guidelines and fail to express the intent in
+When a veteran Python developer (a Pythonista) calls portions of
+code not "Pythonic", they usually mean that these lines
+of code do not follow the common guidelines and fail to express its intent in
 what is considered the best (hear: most readable) way.
 
 On some border cases, no best way has been agreed upon on how to express
@@ -53,7 +55,7 @@ One statement per line
 
 While some compound statements such as list comprehensions are
 allowed and appreciated for their brevity and their expressiveness,
-it is bad practice to have two disjoint statements on the same line of code.
+it is bad practice to have two disjointed statements on the same line of code.
 
 **Bad**
 
@@ -124,13 +126,13 @@ inside the function) that was added "just in case" and is seemingly never used,
 than to add a new optional argument and its logic when needed.
 
 3. The **arbitrary argument list** is the third way to pass arguments to a
-function.  If the function intention is better expressed by a signature with an
-extensible number of positional arguments, it can be defined with the ``*args``
-constructs.  In the function body, ``args`` will be a tuple of all the
-remaining positional arguments. For example, ``send(message, *args)`` can be
-called with each recipient as an argument: ``send('Hello', 'God', 'Mom',
-'Cthulhu')``, and in the function body ``args`` will be equal to ``('God',
-'Mom', 'Cthulhu')``.
+   function. If the function intention is better expressed by a signature with
+   an extensible number of positional arguments, it can be defined with the
+   ``*args`` constructs. In the function body, ``args`` will be a tuple of all
+   the remaining positional arguments. For example, ``send(message, *args)``
+   can be called with each recipient as an argument:``send('Hello', 'God',
+   'Mom', 'Cthulhu')``, and in the function body ``args`` will be equal to
+   ``('God', 'Mom', 'Cthulhu')``.
 
 However, this construct has some drawbacks and should be used with caution. If a
 function receives a list of arguments of the same nature, it is often more
@@ -455,27 +457,27 @@ PEP 8
 easy-to-read version of PEP 8 is also available at `pep8.org <http://pep8.org/>`_.
 
 This is highly recommended reading. The entire Python community does their
-best to adhere to the guidelines laidout within this document. Some project
+best to adhere to the guidelines laid out within this document. Some project
 may sway from it from time to time, while others may
-`ammend its recommendations <http://docs.python-requests.org/en/master/dev/contributing/#kenneth-reitz-s-code-style>`_.
+`amend its recommendations <http://docs.python-requests.org/en/master/dev/contributing/#kenneth-reitz-s-code-style>`_.
 
-That being said, conforming your Python code to PEP 8 is generally a good
-idea and helps make code more consistent when working on projects with other
-developers. There is a command-line program, `pep8 <https://github.com/jcrocholl/pep8>`_,
-that can check your code for conformance. Install it by running the following
-command in your terminal:
+That being said, conforming your Python code to PEP 8 is generally a good idea
+and helps make code more consistent when working on projects with other
+developers. There is a command-line program, `pycodestyle <https://github.com/PyCQA/pycodestyle>`_
+(previously known as ``pep8``), that can check your code for conformance.
+Install it by running the following command in your terminal:
 
 
 .. code-block:: console
 
-    $ pip install pep8
+    $ pip install pycodestyle
 
 
 Then run it on a file or series of files to get a report of any violations.
 
 .. code-block:: console
 
-    $ pep8 optparse.py
+    $ pycodestyle optparse.py
     optparse.py:69:11: E401 multiple imports on one line
     optparse.py:77:1: E302 expected 2 blank lines, found 1
     optparse.py:88:5: E301 expected 1 blank line, found 0

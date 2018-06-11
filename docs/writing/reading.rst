@@ -1,7 +1,9 @@
 Reading Great Code
 ==================
 
-One of the core tenants behind the design of Python is creating
+.. image:: https://farm5.staticflickr.com/4221/34689452831_93d7fd0571_k_d.jpg
+
+One of the core tenets behind the design of Python is creating
 readable code. The motivation behind this design is simple: The number
 one thing that Python programmers do is read code.
 
